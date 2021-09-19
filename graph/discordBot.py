@@ -1,10 +1,6 @@
 import discord
 import os
-from discord.ext import commands
-import random
-
-client = discord.Client()
-bot = commands.Bot(command_prefix="$")
+from main import bot
 
 
 @bot.event
@@ -43,6 +39,3 @@ async def on_message(message):
             file=discord.File("/home/elvis/StonksBot/images/fig1.png")
         )
     await bot.process_commands(message)
-
-
-bot.run(os.getenv("DISCORDAPIKEY"))
