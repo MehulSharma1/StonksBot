@@ -4,7 +4,11 @@ import discord
 import os
 import random
 from commands.greetings import Greetings
+
+from commands.plot import Plot
+
 from commands.summary import Summary
+
 
 bot = commands.Bot(command_prefix="Stonk:")
 
@@ -16,6 +20,7 @@ async def on_ready():
 
 
 bot.add_cog(Greetings(bot))
+bot.add_cog(Plot(bot))
 bot.add_cog(Summary(bot))
 
 bot.run(os.getenv("DISCORDAPIKEY"))
