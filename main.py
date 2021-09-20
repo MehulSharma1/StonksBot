@@ -4,6 +4,7 @@ import discord
 import os
 import random
 from commands.greetings import Greetings
+from commands.plot import Plot
 
 bot = commands.Bot(command_prefix="$")
 
@@ -47,5 +48,6 @@ async def on_message(message):
 
 
 bot.add_cog(Greetings(bot))
+bot.add_cog(Plot(bot))
 
 bot.run(os.getenv("DISCORDAPIKEY"))
