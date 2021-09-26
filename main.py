@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix="Stonk:")
 
 @bot.event
 async def on_ready():
-    print("We have logged in as {0.user}".format(bot))
+    print("We have successfully logged in as {0.user}".format(bot))
     print(os.getcwd())
 
 
