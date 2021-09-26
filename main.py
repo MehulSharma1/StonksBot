@@ -10,7 +10,7 @@ from commands.plot import Plot
 from commands.summary import Summary
 
 
-bot = commands.Bot(command_prefix="Stonk:")
+bot = commands.Bot(command_prefix="$")
 
 
 @bot.event
